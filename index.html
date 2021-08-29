@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Meet Surface Book 3 – 13.5” or 15” All-In-One Laptop, Tablet & Studio – Microsoft Surface</title>
+
+  <script type="module">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+
+  <meta name="description" content="Page description">
+  <meta property="og:title" content="Meet Surface Book 3 – 13.5” or 15” All-In-One Laptop, Tablet & Studio – Microsoft Surface">
+  <meta property="og:description" content="Page description">
+  <meta property="og:image" content="https://www.mywebsite.com/image.jpg">
+  <meta property="og:image:alt" content="Image description">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="https://www.mywebsite.com/page">
+  <link rel="canonical" href="https://www.mywebsite.com/page">
+
+  <link rel="icon" href="https://www.microsoft.com/favicon.ico?v2">
+  <!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml"> -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#FF00FF">
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+    }
+    body{
+      line-height: 1.5;
+      white-space: nowrap;
+    }
+    a,span,button{
+      font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    a{
+      text-decoration: none;
+      color: #000000;
+    }
+    button{
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    img{
+      max-width: 100%;
+    }
+    .header{
+      min-width: 320px;
+      color: #000;
+      background-color: #fff;
+      padding: 0 5.5%;
+      position: relative;
+    }
+    .page-width{
+      max-width: 1600px;
+      margin: 0 auto;
+      background: #fff;
+      height: 54px;
+    }
+    .menu{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 53px;
+    }
+    .menu__item {
+      padding: 16px 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      cursor: pointer;
+    }
+    .menu__item.mobile{
+      display: none;
+    }
+    .dropdown__link, .item__link{
+      color: #262626;
+    }
+    .item_logo{
+      width: 108px;
+      height: 23px;
+      margin-right: 29px;
+    }
+    .divider {
+      padding-right: 8px;
+      border-left: 2px solid #000;
+      height: 24px;
+    }
+    .text-bold{
+      font-size: 18px;
+      font-weight: 600;
+      padding: 0 10px;
+    }
+    .item__link {
+      font-size: 13px;
+      position: relative;
+      cursor: pointer;
+    }
+    .item__link.hidden{
+      display: none;
+    }
+    .dropdown__link {
+      padding: 0 25.9px 0 11px;
+      font-size: 13px;
+      position: relative;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    .dropdown__link.hidden{
+      display: none;
+    }
+    .dropdown__link:not(.dropdown__link.no-arrow)::after {
+      content: "";
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      border-right: 1px solid #262626;
+      border-bottom: 1px solid #262626;
+      width: 5px;
+      height: 5px;
+      transform: rotate(45deg) translateY(-50%);
+        -webkit-transform: rotate(45deg) translateY(-50%);
+          -ms-transform: rotate(45deg) translateY(-50%);
+    }
+    .menu__item.dropdown {
+      width: 56.3%;
+    }
+    .item__link.search {
+      padding-left:4px;
+      margin: 0 1px;
+      max-width: 100%;
+    }
+    .item__link.search svg{
+      margin-left: 5px;
+    }
+    .item__link.cart {
+      margin: 0 10px 0 27px;
+      min-width: 16px;
+    }
+    #cart span {
+      margin-right: 6px;
+    }
+    #search span{
+      padding: 0 4px 0 12px;
+      margin-top: -2px;
+    }
+    .link-with-icon,
+    .item__link.account,
+    .item__link.title a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+    #cart svg {
+      margin-left: 6px;
+    }
+    .item__link.account a {
+      padding: 0 4px 0 0px;
+    }
+    .sign-in__logo{
+      width: 32px;
+      height: 32px;
+      margin-left: 6px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+    #cart img {
+      width: 16px;
+      height: 16px;
+    }
+    .mt-2{
+      margin-top: 2px;
+    }
+    .mt-3{
+      margin-top: 3px;
+    }
+    .mt-4{
+      margin-top: 4px;
+    }
+    .mt-6{
+      margin-top: 6px;
+    }
+
+    /*Hover states(excluding them on touchscreens)*/
+    @media(hover:hover){
+    .dropdown__link:not(.dropdown__link.no-arrow):hover::before{
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 11px;
+        width: 80%;
+        background: #262626;
+        height: 2px;
+      }
+      .dropdown__link.no-arrow:hover::before{
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 11px;
+        width: 55%;
+        background: #262626;
+        height: 2px;
+      }
+      .text-bold:hover::before{
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 22px;
+        width: 66%;
+        background: #262626;
+        height: 1px;
+      }
+      #search-desktop:hover span::before{      
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 4px;
+        width: 60%;
+        background: #262626;
+        height: 1px;
+      }
+      #cart:hover span::before{
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0px;
+        width: 54%;
+        background: #262626;
+        height: 1px;
+      }
+    }
+
+    /*Responsive*/
+    @media only screen and (max-width: 1399px){
+      .mob_dsp-none{
+        display: none;
+      }
+      .item__link.cart {
+        margin: 0 25px 0 0;
+      }
+    }
+    @media only screen and (min-width: 860px) and (max-width: 1083px){
+      .header {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+
+    @media only screen and (max-width: 1160px){
+      .dropdown__link.no-arrow,
+      .dropdown__link:nth-child(5){
+        display: none;
+      }   
+      .dropdown__link.hidden{
+        display: block;
+      } 
+    }
+    @media only screen and (max-width: 1014px){
+      .dropdown__link:nth-child(3){
+        display: none;
+      }  
+    }
+    @media only screen and (max-width: 914px){
+      .dropdown__link:nth-child(2){
+        display: none;
+      } 
+    }
+    @media only screen and (max-width: 859px){
+      .menu__item:not(.menu__item:nth-child(1),.menu__item:nth-child(2),.menu__item:nth-child(7),.menu__item:nth-child(8)) {
+        display: none;
+      }
+      .item__link.search{
+        padding-left: 11px;
+      }
+      .header{
+        padding: 0;
+        margin-bottom: 33px;
+      }
+      .menu{
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        border-bottom: 1px solid #e6e6e6;
+        height: 54px;
+      }
+      .menu__item.mobile{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        margin-top: 0px;
+      }
+      .item__link.burger {
+        width: 48px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+      }
+      .line {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 20px;
+        height: 1.7px;
+        margin-bottom: 3.9px;
+        background: #262626;
+      }
+      .item__link.search svg {
+        width: 20px!important;
+        height: 20px!important;
+        margin-top: -3px;
+      }
+      .item__link.hidden{
+        display: block;
+        border-bottom: 1px solid #e6e6e6;
+      }
+      .item__link.title{
+        margin: 0;
+        height: 33px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+      }
+      .dropdown__link:not(.dropdown__link.no-arrow)::after{
+        top: 42%;
+        border-right: 1.5px solid #262626;
+        border-bottom: 1.5px solid #262626;
+        width: 7px;
+        height: 7px;
+        right: 8px;
+      }
+      .item_logo{
+        margin: 5px 0px 12px 12px;
+      }
+      .menu__item {
+        padding: 2px 0;
+      }
+      .menu__item:nth-child(7){
+        padding-right: 12px;
+      }
+      .dropdown__link{
+        font-size: 15px;
+      }
+      .item__link.search svg {
+          margin-left: -2px;
+      }
+      .mt-4{
+        margin-top:-5px;
+      }
+      .text-bold{
+        margin-top: -2px;
+        font-weight: 600;
+        padding-left: 16px!important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="page-width">
+      <nav class="menu">
+        <div class="menu__item mobile">
+          <div class="item__link burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <div class="item__link search">
+            <button id="search-desktop" class="link-with-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 32 32" width="16px" height="17px"><path d="M 19 3 C 13.488281 3 9 7.488281 9 13 C 9 15.394531 9.839844 17.589844 11.25 19.3125 L 3.28125 27.28125 L 4.71875 28.71875 L 12.6875 20.75 C 14.410156 22.160156 16.605469 23 19 23 C 24.511719 23 29 18.511719 29 13 C 29 7.488281 24.511719 3 19 3 Z M 19 5 C 23.429688 5 27 8.570313 27 13 C 27 17.429688 23.429688 21 19 21 C 14.570313 21 11 17.429688 11 13 C 11 8.570313 14.570313 5 19 5 Z"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="item_logo">
+            <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="Microsoft logo transparent" loading='lazy'>
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="item__link title">
+            <a href="https://www.microsoft.com/en-us/surface" class="mt-3">
+              <span class="divider"></span>
+              <span class="text-bold">Surface</span> 
+            </a>
+          </div>
+        </div>
+        <div class="menu__item dropdown mt-6">     
+            <button class="dropdown__link">Computers</button>
+            <button class="dropdown__link">Computers for Business</button>
+            <button class="dropdown__link">Accessories</button>
+            <button class="dropdown__link hidden">More</button>
+            <button class="dropdown__link">Shop now</button>
+            <button class="dropdown__link no-arrow">Support</button>
+        </div>
+        
+        <div class="menu__item mt-6">
+          <button class="dropdown__link">All Microsoft</button>
+        </div>
+        <div class="menu__item mt-6">
+          <div class="item__link search">
+            <button id="search-desktop" class="link-with-icon" title="Search Microsoft.com">
+              <span class="mob_dsp-none" >Search</span> 
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 32 32" width="17px" height="17px"><path d="M 19 3 C 13.488281 3 9 7.488281 9 13 C 9 15.394531 9.839844 17.589844 11.25 19.3125 L 3.28125 27.28125 L 4.71875 28.71875 L 12.6875 20.75 C 14.410156 22.160156 16.605469 23 19 23 C 24.511719 23 29 18.511719 29 13 C 29 7.488281 24.511719 3 19 3 Z M 19 5 C 23.429688 5 27 8.570313 27 13 C 27 17.429688 23.429688 21 19 21 C 14.570313 21 11 17.429688 11 13 C 11 8.570313 14.570313 5 19 5 Z"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="menu__item mt-4">
+          <div class="item__link cart" title="{{cart_items.quantity}} items in shopping cart">
+            <a href='https://www.microsoft.com/en-us/store/buy' id="cart" class="link-with-icon">
+              <span class="mob_dsp-none">Cart</span>
+              <img src="https://i.ibb.co/yBqc8Dk/2021-08-29-030434.png" alt="Shopping cart icon black transparent" loading='lazy'>
+            </a>
+        </div>
+          <div class="item__link account mt-2">
+            <a href="https://www.microsoft.com/rpsauth/v1/account/SignIn?ru=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fd%2Fsurface-book-3%2F8xbw9g3z71f1%3Factivetab%3Dpivot%3Aoverviewtab%26lc%3D1049"
+            id="search" class="link-with-icon">
+              <span class="mob_dsp-none">Sign in</span>
+              <div class="sign-in__logo">
+               <img src="https://i.ibb.co/Jjw1ZH6/2021-08-29-030123.png" alt="Sign up person black icon" loading='lazy'>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+       <div class="item__link title hidden">
+            <a href="https://www.microsoft.com/en-us/surface">
+              <span class="text-bold dropdown__link">Surface</span> 
+            </a>
+          </div>
+    </div>
+  </header>
+<!--By Radko Max ©-->
+</body>
+</html>
